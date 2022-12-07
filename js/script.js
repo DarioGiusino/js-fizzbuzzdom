@@ -7,20 +7,31 @@
 ----
 */
 
+const prova = document.getElementById('prova');
 // // get element from dom
 let number = '';
 
 // 2- ciclo 1-100
 for (let i = 1; i <= 100; i++){
-    number = `<div>${i}</div>`;
-
+    // se multiplo di 3 E di 5 stampa fizzbuzz
     if ((i % 3 === 0) && (i % 5 === 0)){
-        number = `<div>FizzBuzz</div>`;
-    } else if (i % 5 === 0){
-        number = `<div>Buzz</div>`;
-    } else if (i % 3 === 0){
-        number = `<div>Fizz</div>`;
+        number = number + `<div>FizzBuzz</div>`;
+    } 
+    // se multiplo di 5 stampa buzz
+    else if (i % 5 === 0){
+        number = number + `<div>Buzz</div>`;
+    } 
+    // se multiplo di 3 stampa fizz
+    else if (i % 3 === 0){
+        number = number + `<div>Fizz</div>`;
+    } 
+    // altrimenti stampa il numero
+    else {
+        number = number + `<div>${i}</div>`;
     }
 
     console.log(number);
 }
+
+prova.innerHTML = number;
+
