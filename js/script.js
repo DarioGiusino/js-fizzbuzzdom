@@ -12,14 +12,14 @@ let number = '';
 
 // 2- ciclo 1-100
 for (let i = 1; i <= 100; i++){
-    number = i;
+    number = `<div>${i}</div>`;
 
     if ((i % 3 === 0) && (i % 5 === 0)){
-        number = 'FizzBuzz';
+        number = `<div>FizzBuzz</div>`;
     } else if (i % 5 === 0){
-        number = 'Buzz';
+        number = `<div>Buzz</div>`;
     } else if (i % 3 === 0){
-        number = 'Fizz';
+        number = `<div>Fizz</div>`;
     }
 
     console.log(number);
