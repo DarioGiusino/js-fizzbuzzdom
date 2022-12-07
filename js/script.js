@@ -10,6 +10,17 @@
 // // get element from dom
 
 // 2- ciclo 1-100
-for (let i = 1; i <=100; i++){
-    console.log(i);
+for (let i = 1; i <= 100; i++){
+    let number = '';
+    number += i;
+
+    if ((i % 3 === 0) && (i % 5 === 0)){
+        number = 'FizzBuzz';
+    } else if (i % 5 === 0){
+        number = 'Buzz';
+    } else if (i % 3 === 0){
+        number = 'Fizz';
+    }
+
+    console.log(number);
 }
