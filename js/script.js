@@ -8,11 +8,11 @@
 */
 
 // // get element from dom
+let number = '';
 
 // 2- ciclo 1-100
 for (let i = 1; i <= 100; i++){
-    let number = '';
-    number += i;
+    number = i;
 
     if ((i % 3 === 0) && (i % 5 === 0)){
         number = 'FizzBuzz';
